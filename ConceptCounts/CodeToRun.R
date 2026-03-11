@@ -4,6 +4,7 @@ devtools::load_all(here::here("../../CDMConnector"))
 library(OmopSketch)
 library(odbc)
 library(RPostgres)
+library(duckdb)
 
 open_omop_dataset <- function(dir, format) {
   list_directories <- function(path) {
